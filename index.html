@@ -87,12 +87,12 @@
 </ul>
 <h5 id="2-使用cnpm安装hexo"><a href="#2-使用cnpm安装hexo" class="headerlink" title="2. 使用cnpm安装hexo"></a>2. 使用cnpm安装hexo</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 
-<h5 id="3-hexo博客搭建"><a href="#3-hexo博客搭建" class="headerlink" title="3.hexo博客搭建"></a>3.hexo博客搭建</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建用于保存blog的文件夹</span></span><br><span class="line">cd /path/to/save_blog</span><br><span class="line">makdir blog &amp;&amp; cd bolg</span><br><span class="line">sudo hexo init  # 耗时较长</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">npm install</span></span><br></pre></td></tr></table></figure>
+<h5 id="3-hexo博客搭建"><a href="#3-hexo博客搭建" class="headerlink" title="3.hexo博客搭建"></a>3.hexo博客搭建</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">创建用于保存blog的文件夹</span></span><br><span class="line">cd /path/to/save_blog</span><br><span class="line">makdir blog &amp;&amp; cd bolg</span><br><span class="line">hexo init  # 耗时较长</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
-<h5 id="4-hexo博客网页启动"><a href="#4-hexo博客网页启动" class="headerlink" title="4. hexo博客网页启动"></a>4. hexo博客网页启动</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">启动</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@DESKTOP-3QNKDLL:/mnt/k/service/blog# hexo n &quot;我的第一篇博客文章&quot;</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Created: /mnt/k/service/blog/source/_posts/我的第一篇博客文章.md</span><br></pre></td></tr></table></figure>
+<h5 id="4-hexo博客网页启动"><a href="#4-hexo博客网页启动" class="headerlink" title="4. hexo博客网页启动"></a>4. hexo博客网页启动</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">启动</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@DESKTOP-3QNKDLL:/mnt/k/service/blog# hexo n &quot;我的第一篇博客文章&quot;</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Created: /mnt/k/service/blog/source/_posts/我的第一篇hexo博客文章.md</span><br></pre></td></tr></table></figure>
 
-<h5 id="5-部署到github"><a href="#5-部署到github" class="headerlink" title="5. 部署到github"></a>5. 部署到github</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">把博客同步到Github Page上还需要两个插件</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">https://yw9.github.io/posts/make-a-static-blog-with-wsl/</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">npm install hexo -server --save</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">npm install hexo-deployer-git --save</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装github部署插件</span></span><br><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h5 id="5-部署到github"><a href="#5-部署到github" class="headerlink" title="5. 部署到github"></a>5. 部署到github</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装github部署插件</span></span><br><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
 <p>github中创建：**<a target="_blank" rel="noopener" href="https://github.com/DYF-AI/DYF-AI.github.io">DYF-AI.github.io</a><strong>，</strong>前面必须和github的名称是一致的**</p>
 <p>（建议部署到gitee，github会经常打不开）</p>
@@ -102,13 +102,7 @@
 <p>修改为:</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/DYF-AI/DYF-AI.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span>  <span class="string">main</span></span><br></pre></td></tr></table></figure>
 
-<p>部署到远端</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g # </span><br><span class="line"></span><br><span class="line">hexo s  # 启动博客服务</span><br><span class="line"></span><br><span class="line">hexo d  # 推送到github</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<h5 id="6-常用命令"><a href="#6-常用命令" class="headerlink" title="6. 常用命令"></a>6. 常用命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  # 清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line">hexo s  # hexo server 启动服务器。默认情况下，访问网址为： http://localhost:4000/</span><br><span class="line">hexo g # hexo generate 生成静态文件</span><br><span class="line">hexo d  # 推送到github  部署网站</span><br></pre></td></tr></table></figure>
 
 
 
@@ -119,7 +113,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/18/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-id="clfdr2jw8000068vnd0di1djl" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/03/18/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-id="clfdrfsz80001dkvney1r21ag" class="article-share-link">Share</a>
       
       
     </footer>
@@ -168,7 +162,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/03/18/hello-world/" data-id="clfdr2jwh000168vnftsd4gan" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/03/18/hello-world/" data-id="clfdrfsyx0000dkvn9lzb6rty" class="article-share-link">Share</a>
       
       
     </footer>
